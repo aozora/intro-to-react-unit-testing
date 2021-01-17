@@ -13,9 +13,11 @@ const SearchForm = ({ searchAnime }) => {
 
   return (
     <section className="search">
-      <form noValidate onSubmit={onSubmit}>
+      <form role="search" noValidate onSubmit={onSubmit}>
+        <label htmlFor="input">Search an Anime:</label>
         <input
           type="text"
+          id="input"
           name="input"
           value={input}
           onChange={event => {
