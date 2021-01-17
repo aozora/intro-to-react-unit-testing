@@ -30,6 +30,7 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-testing-library": "^3.10.1",
     "prettier": "^2.2.1"
   },
   "eslintConfig": {
@@ -39,6 +40,7 @@
       "plugin:jest/recommended",
       "plugin:jest-dom/recommended",
       "plugin:testing-library/react",
+      "plugin:testing-library/recommended",
       "plugin:react-hooks/recommended",
       "plugin:prettier/recommended",
       "prettier/react",
@@ -75,7 +77,10 @@
           "no-refs": "warn",
           "no-unsanitized/method": "error",
           "no-unsanitized/property": "error",
-          "prettier/prettier": "error"
+          "prettier/prettier": "error",
+          "testing-library/await-async-query": "error",
+          "testing-library/no-await-sync-query": "error",
+          "testing-library/no-debug": "warn"
         }
       }
     ]

@@ -13,10 +13,10 @@ const Search = () => {
   };
 
   return (
-    <>
+    <div data-testid="search">
       <SearchForm searchAnime={doSearch} />
       <SearchResults items={items} />
-    </>
+    </div>
   );
 };
 
