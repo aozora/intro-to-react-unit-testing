@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 const SearchForm = ({ searchAnime }) => {
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState('');
 
-  const onSubmit = (event) => {
+  const onSubmit = event => {
     event.preventDefault();
 
     if (input) {
@@ -18,7 +18,7 @@ const SearchForm = ({ searchAnime }) => {
           type="text"
           name="input"
           value={input}
-          onChange={(event) => {
+          onChange={event => {
             setInput(event.target.value);
           }}
         />
