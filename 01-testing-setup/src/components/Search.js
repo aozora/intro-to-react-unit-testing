@@ -12,7 +12,7 @@ const Search = () => {
 
   return (
     <>
-      <SearchForm searchBooks={doSearch} />
+      <SearchForm searchAnime={doSearch} />
       <SearchResults items={items} />
     </>
   );

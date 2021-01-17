@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 
-const SearchForm = ({ searchBooks }) => {
+const SearchForm = ({ searchAnime }) => {
   const [input, setInput] = useState("");
 
   const onSubmit = (event) => {
     event.preventDefault();
 
     if (input) {
-      searchBooks(input);
+      searchAnime(input);
     }
   };
 
