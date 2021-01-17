@@ -1,0 +1,95 @@
+{
+  "name": "intro",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "coverage": "react-scripts test --coverage --watchAll=false",
+    "pretty": "prettier --write \"src/**/*.js\""
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.1",
+    "web-vitals": "^0.2.4"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.3",
+    "@testing-library/user-event": "^12.6.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest-dom": "^3.6.5",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "prettier": "^2.2.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      "plugin:jest/recommended",
+      "plugin:jest-dom/recommended",
+      "plugin:testing-library/react",
+      "plugin:react-hooks/recommended",
+      "plugin:prettier/recommended",
+      "prettier/react",
+      "prettier/standard"
+    ],
+    "overrides": [
+      {
+        "env": {
+          "jest/globals": true
+        },
+        "plugins": [
+          "jest",
+          "jest-dom",
+          "testing-library",
+          "prettier"
+        ],
+        "files": [
+          "**/*.ts?(x)"
+        ],
+        "rules": {
+          "no-debugger": "warn",
+          "no-useless-rename": 0,
+          "additional-typescript-only-rule": "warn",
+          "react-hooks/rules-of-hooks": "error",
+          "react-hooks/exhaustive-deps": "warn",
+          "max-len": [
+            "off"
+          ],
+          "no-danger": "warn",
+          "no-find-dom-node": "warn",
+          "jsx-no-script-url": "warn",
+          "jsx-no-target-blank": "warn",
+          "jsx-props-no-spreading": "warn",
+          "no-refs": "warn",
+          "no-unsanitized/method": "error",
+          "no-unsanitized/property": "error",
+          "prettier/prettier": "error"
+        }
+      }
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
