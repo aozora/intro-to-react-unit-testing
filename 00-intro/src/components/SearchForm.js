@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const SearchForm = ({ searchBooks }) => {
-  const [input, setInput] = useState('');
+  const [input, setInput] = useState("");
 
   const onSubmit = (event) => {
     event.preventDefault();
@@ -13,10 +13,7 @@ const SearchForm = ({ searchBooks }) => {
 
   return (
     <section className="search">
-      <form
-        noValidate
-        onSubmit={onSubmit}
-      >
+      <form noValidate onSubmit={onSubmit}>
         <input
           type="text"
           name="input"

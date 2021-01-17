@@ -5,7 +5,10 @@
     "airbnb",
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
-    "plugin:react-hooks/recommended"
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended",
+    "prettier/react",
+    "prettier/standard"
   ],
   "env": {
     "browser": true,
@@ -24,7 +27,8 @@
     }
   },
   "plugins": [
-    "react"
+    "react",
+    "prettier"
   ],
   "rules": {
     "react/prop-types": "off",
@@ -35,6 +39,7 @@
       "error",
       "never"
     ],
+    "prettier/prettier": "error",
     "indent": [
       "error",
       2,
