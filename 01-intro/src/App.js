@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <h1>React Book Search</h1>
+        <h1>React Anime Search</h1>
       </header>
       <main>
         <Search />
