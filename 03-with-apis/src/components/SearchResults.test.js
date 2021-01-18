@@ -56,7 +56,7 @@ describe('SearchForm', () => {
     const { container, getByTestId } = result;
     const comp = getByTestId('search-results');
 
-    // since we pass an, I expect the <section> element to be empty
+    // since we pass data, I expect the <section> element to be empty
     expect(comp).not.toBeEmptyDOMElement();
 
     // get all the cards contained in the component
