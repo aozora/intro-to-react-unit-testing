@@ -1,21 +1,29 @@
 import React, { useState } from 'react';
 import SearchForm from './SearchForm';
 import SearchResults from './SearchResults';
+import useFetch from '../hooks/useFetch';
 
 const Search = () => {
-  const [items, setItems] = useState([]);
+  const [query, setQuery] = useState(null);
+  const { data, isLoading, isError } = useFetch(`https://api.jikan.moe/v3/search/anime?q=`, query);
 
-  const doSearch = async query => {
-    const response = await fetch(`https://api.jikan.moe/v3/search/anime?q=${query}`);
-    const data = await response.json();
-
-    setItems(data.results);
+  const doSearch = async q => {
+    setQuery(q);
   };
 
   return (
     <div data-testid="search">
       <SearchForm searchAnime={doSearch} />
-      <SearchResults items={items} />
+
+      {isLoading && <div>Loading...</div>}
+
+      {isError && (
+        <div>
+          <p>Sorry, an error occurred!</p>
+        </div>
+      )}
+
+      <SearchResults items={data && data.results} />
     </div>
   );
 };

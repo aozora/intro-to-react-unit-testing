@@ -78,7 +78,7 @@
           "no-refs": "warn",
           "no-unsanitized/method": "error",
           "no-unsanitized/property": "error",
-          "prettier/prettier": "error",
+          "prettier/prettier": "off",
           "testing-library/await-async-query": "error",
           "testing-library/no-await-sync-query": "error",
           "testing-library/no-debug": "warn"
