@@ -162,3 +162,21 @@ main {
   /*overflow-wrap: break-word;*/
   white-space: nowrap;
 }
+
+.anime {
+  width: 100%;
+}
+
+.anime img {
+  width: 100%;
+}
+
+.anime h1 {
+  margin: 1rem 0 0 0 ;
+  font-size: 2rem;
+}
+
+.anime h2 {
+  margin: 1rem 0 0 0 ;
+  font-size: 1.5rem;
+}
